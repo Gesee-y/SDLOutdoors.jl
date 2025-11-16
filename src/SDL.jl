@@ -1,4 +1,5 @@
 ## SDL2 Windows##
+module SDLOutdoors
 
 using Reexport
 @reexport using Outdoors
@@ -417,3 +418,5 @@ _quit_SDL() = SDL_Quit()
 _get_SDL_Error() = unsafe_string(SDL_GetError())
 
 Delay(t) = SDL_Delay(t)
+
+end # module
